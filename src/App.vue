@@ -16,6 +16,9 @@
 
 		html2pdf().from(element).set(opt).save();
 	}
+	function resetForm() {
+		location.reload();
+	}
 </script>
 
 <template>
@@ -28,7 +31,7 @@
 	<div class="mt-16 mb-16">
 		<button
 			class="bg-red-500 text-white font-semibold px-10 py-4 rounded text-lg mr-4 hover:bg-red-600"
-			@click="reset"
+			@click="resetForm()"
 		>
 			Limpiar Formulario
 		</button>

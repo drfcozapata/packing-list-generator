@@ -72,6 +72,7 @@
 </script>
 
 <template>
+	<!-- <form id="packing-list-form"> -->
 	<table class="w-full table-fixed">
 		<thead class="bg-slate-700 text-white font-semibold">
 			<tr>
@@ -429,6 +430,7 @@
 			</tr>
 		</tbody>
 	</table>
+	<!-- </form> -->
 </template>
 
 <style scoped>
