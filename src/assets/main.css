@@ -13,3 +13,11 @@ body {
 	font-family: ubuntu, sans-serif;
 	font-size: 13px;
 }
+@media (max-width: 580px) {
+	#app {
+		padding: 1rem;
+	}
+	body {
+		font-size: 12px;
+	}
+}
