@@ -23,7 +23,7 @@
 	@media (max-width: 580px) {
 		img {
 			width: 80px;
-			height: 60px;
+			height: 62px;
 		}
 		h1 {
 			font-size: 20px;

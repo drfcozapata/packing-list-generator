@@ -32,10 +32,6 @@
 	function resetForm() {
 		location.reload();
 	}
-	onMounted(() => {
-		const formTable = document.getElementById('packing-list-form');
-		formTable.reset();
-	});
 </script>
 
 <template>
