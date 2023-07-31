@@ -912,7 +912,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2" />
+						<input type="text" class="w-full px-3 pb-2 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
@@ -941,7 +941,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100" />
+						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
@@ -970,7 +970,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2" />
+						<input type="text" class="w-full px-3 pb-2 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
@@ -999,7 +999,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100" />
+						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
@@ -1028,7 +1028,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2" />
+						<input type="text" class="w-full px-3 pb-2 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
@@ -1057,7 +1057,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100" />
+						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
@@ -1086,7 +1086,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2" />
+						<input type="text" class="w-full px-3 pb-2 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
@@ -1115,7 +1115,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100" />
+						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
@@ -1144,7 +1144,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2" />
+						<input type="text" class="w-full px-3 pb-2 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
@@ -1173,7 +1173,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100" />
+						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
@@ -1202,7 +1202,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2" />
+						<input type="text" class="w-full px-3 pb-2 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
@@ -1231,7 +1231,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100" />
+						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
@@ -1260,7 +1260,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2" />
+						<input type="text" class="w-full px-3 pb-2 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
@@ -1289,7 +1289,7 @@
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100" />
+						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input

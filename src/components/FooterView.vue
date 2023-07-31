@@ -6,9 +6,9 @@
 	<footer class="text-justify mt-2 mb-3">
 		<p class="mb-2 align-center">
 			Por medio de la presente, Yo,
-			<input type="text" class="text-center px-2 leading-6 nameField" />, titular de la
+			<input type="text" class="text-center px-1 leading-6 nameField" />, titular de la
 			cédula de identidad
-			<input type="text" class="text-center px-2 leading-6 cedulaField" />, certifico que
+			<input type="text" class="text-center px-1 leading-6 cedulaField" />, certifico que
 			los detalles de los productos incluídos en este Packing List (cantidades,
 			descripción y precios de cada uno) son precisos y se corresponden con las facturas
 			de compra correspondientes.
@@ -25,11 +25,13 @@
 			información proporcionada.
 		</p>
 
-		<div class="flex flex-col m-auto">
+		<div class="flex flex-col m-auto relative">
 			<input type="text" class="w-64 h-16 border py-4 px-6 m-auto text-center" />
 			<div class="text-center">
 				<p class="font-semibold">Firma</p>
 			</div>
+
+			<p class="pages">Página <input type="text" class="text-center pagesField" /> de <input type="text" class="text-center pagesField" /></p>
 		</div>
 	</footer>
 </template>
@@ -40,6 +42,16 @@
 	}
 	.cedulaField {
 		width: 90px;
+	}
+	.pages {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		font-size: 10px;
+	}
+	.pagesField {
+		width: 14px;
+		line-height: 22px;
 	}
 	@media (max-width: 580px) {
 		footer {
@@ -54,6 +66,13 @@
 		}
 		.lastParag {
 			margin-bottom: 20px;
+		}
+		.pages {
+			bottom: 2px;
+		}
+		.pagesField {
+			padding-top: 4px;
+			line-height: 18px;
 		}
 	}
 </style>
