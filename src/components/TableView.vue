@@ -883,21 +883,21 @@
 			<thead class="bg-slate-700 text-white font-semibold">
 				<tr>
 					<td
-						class="w-[15%] text-center px-3 -pt-2 pb-3 border-t-[1px] border-b-[1px] border-l-[1px] align-top"
+						class="w-[15%] text-center align-middle px-3 -pt-3 pb-3 border-t-[1px] border-b-[1px] border-l-[1px] align-top"
 					>
 						Cantidad
 					</td>
 					<td
-						class="w-[55%] text-center px-3 -pt-2 pb-3 border-t-[1px] border-b-[1px] border-l-[1px] align-top"
+						class="w-[55%] text-center align-middle px-3 -pt-3 pb-3 border-t-[1px] border-b-[1px] border-l-[1px] align-top"
 					>
 						Descripción
 					</td>
 					<td
-						class="w-[15%] text-center px-3 -pt-2 pb-3 border-t-[1px] border-b-[1px] border-l-[1px] align-top"
+						class="w-[15%] text-center align-middle px-3 -pt-3 pb-3 border-t-[1px] border-b-[1px] border-l-[1px] align-top"
 					>
 						Precio Un ($)
 					</td>
-					<td class="w-[15%] text-center px-3 -pt-2 pb-3 border align-top">
+					<td class="w-[15%] text-center align-middle px-3 -pt-3 pb-3 border align-top">
 						Total Precio
 					</td>
 				</tr>
@@ -908,18 +908,18 @@
 						<input
 							type="number"
 							v-model="quantity1"
-							class="w-full px-2 pb-2 text-center"
+							class="w-full px-2 pb-1 text-center leading-6"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
 							type="number"
 							step="any"
 							v-model="price1"
-							class="w-full px-3 pb-2 text-right"
+							class="w-full px-3 pb-1 text-right leading-6"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px]">
@@ -937,18 +937,18 @@
 						<input
 							type="number"
 							v-model="quantity2"
-							class="w-full px-2 pb-2 text-center bg-gray-100"
+							class="w-full px-2 pb-1 text-center leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
 							type="number"
 							step="any"
 							v-model="price2"
-							class="w-full px-3 pb-2 text-right bg-gray-100"
+							class="w-full px-3 pb-1 text-right leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px] bg-gray-100">
@@ -966,18 +966,18 @@
 						<input
 							type="number"
 							v-model="quantity3"
-							class="w-full px-2 pb-2 text-center"
+							class="w-full px-2 pb-1 text-center leading-6"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
 							type="number"
 							step="any"
 							v-model="price3"
-							class="w-full px-3 pb-2 text-right"
+							class="w-full px-3 pb-1 text-right leading-6"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px]">
@@ -995,18 +995,18 @@
 						<input
 							type="number"
 							v-model="quantity4"
-							class="w-full px-2 pb-2 text-center bg-gray-100"
+							class="w-full px-2 pb-1 text-center leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
 							type="number"
 							step="any"
 							v-model="price4"
-							class="w-full px-3 pb-2 text-right bg-gray-100"
+							class="w-full px-3 pb-1 text-right leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px] bg-gray-100">
@@ -1024,18 +1024,18 @@
 						<input
 							type="number"
 							v-model="quantity5"
-							class="w-full px-2 pb-2 text-center"
+							class="w-full px-2 pb-1 text-center leading-6"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
 							type="number"
 							step="any"
 							v-model="price5"
-							class="w-full px-3 pb-2 text-right"
+							class="w-full px-3 pb-1 text-right leading-6"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px]">
@@ -1053,18 +1053,18 @@
 						<input
 							type="number"
 							v-model="quantity6"
-							class="w-full px-2 pb-2 text-center bg-gray-100"
+							class="w-full px-2 pb-1 text-center leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
 							type="number"
 							step="any"
 							v-model="price6"
-							class="w-full px-3 pb-2 text-right bg-gray-100"
+							class="w-full px-3 pb-1 text-right leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px] bg-gray-100">
@@ -1082,18 +1082,18 @@
 						<input
 							type="number"
 							v-model="quantity7"
-							class="w-full px-2 pb-2 text-center"
+							class="w-full px-2 pb-1 text-center leading-6"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
 							type="number"
 							step="any"
 							v-model="price7"
-							class="w-full px-3 pb-2 text-right"
+							class="w-full px-3 pb-1 text-right leading-6"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px]">
@@ -1111,18 +1111,18 @@
 						<input
 							type="number"
 							v-model="quantity8"
-							class="w-full px-2 pb-2 text-center bg-gray-100"
+							class="w-full px-2 pb-1 text-center leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
 							type="number"
 							step="any"
 							v-model="price8"
-							class="w-full px-3 pb-2 text-right bg-gray-100"
+							class="w-full px-3 pb-1 text-right leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px] bg-gray-100">
@@ -1140,18 +1140,18 @@
 						<input
 							type="number"
 							v-model="quantity9"
-							class="w-full px-2 pb-2 text-center"
+							class="w-full px-2 pb-1 text-center leading-6"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
 							type="number"
 							step="any"
 							v-model="price9"
-							class="w-full px-3 pb-2 text-right"
+							class="w-full px-3 pb-1 text-right leading-6"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px]">
@@ -1169,18 +1169,18 @@
 						<input
 							type="number"
 							v-model="quantity10"
-							class="w-full px-2 pb-2 text-center bg-gray-100"
+							class="w-full px-2 pb-1 text-center leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
 							type="number"
 							step="any"
 							v-model="price10"
-							class="w-full px-3 pb-2 text-right bg-gray-100"
+							class="w-full px-3 pb-1 text-right leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px] bg-gray-100">
@@ -1198,18 +1198,18 @@
 						<input
 							type="number"
 							v-model="quantity11"
-							class="w-full px-2 pb-2 text-center"
+							class="w-full px-2 pb-1 text-center leading-6"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
 							type="number"
 							step="any"
 							v-model="price11"
-							class="w-full px-3 pb-2 text-right"
+							class="w-full px-3 pb-1 text-right leading-6"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px]">
@@ -1227,18 +1227,18 @@
 						<input
 							type="number"
 							v-model="quantity12"
-							class="w-full px-2 pb-2 text-center bg-gray-100"
+							class="w-full px-2 pb-1 text-center leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
 							type="number"
 							step="any"
 							v-model="price12"
-							class="w-full px-3 pb-2 text-right bg-gray-100"
+							class="w-full px-3 pb-1 text-right leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px] bg-gray-100">
@@ -1256,18 +1256,18 @@
 						<input
 							type="number"
 							v-model="quantity13"
-							class="w-full px-2 pb-2 text-center"
+							class="w-full px-2 pb-1 text-center leading-6"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px]">
-						<input type="text" class="w-full px-3 pb-2 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px]">
 						<input
 							type="number"
 							step="any"
 							v-model="price13"
-							class="w-full px-3 pb-2 text-right"
+							class="w-full px-3 pb-1 text-right leading-6"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px]">
@@ -1285,18 +1285,18 @@
 						<input
 							type="number"
 							v-model="quantity14"
-							class="w-full px-2 pb-2 text-center bg-gray-100"
+							class="w-full px-2 pb-1 text-center leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[55%] border-b-[1px] border-l-[1px] bg-gray-100">
-						<input type="text" class="w-full px-3 pb-2 bg-gray-100 leading-6" />
+						<input type="text" class="w-full px-3 pb-1 bg-gray-100 leading-6" />
 					</td>
 					<td class="w-[15%] border-b-[1px] border-l-[1px] bg-gray-100">
 						<input
 							type="number"
 							step="any"
 							v-model="price14"
-							class="w-full px-3 pb-2 text-right bg-gray-100"
+							class="w-full px-3 pb-1 text-right leading-6 bg-gray-100"
 						/>
 					</td>
 					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px] bg-gray-100">
@@ -1331,9 +1331,9 @@
 							v-if="
 								sumPrices() === undefined || sumPrices() === null || sumPrices() === NaN
 							"
-							class="text-right font-semibold pr-5 pt-1 pb-3"
+							class="text-right font-semibold pr-5 pb-2"
 						></p>
-						<p class="text-right font-semibold pr-5 pt-1 pb-3">
+						<p class="text-right font-semibold pr-5 pb-2">
 							{{ sumPrices() }}
 						</p>
 					</td>
@@ -1348,5 +1348,9 @@
 	input[type='number']::-webkit-outer-spin-button {
 		-webkit-appearance: none;
 		margin: 0;
+	}
+	td,
+	input {
+		max-height: 28px;
 	}
 </style>
