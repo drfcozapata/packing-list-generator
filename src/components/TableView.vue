@@ -15,6 +15,7 @@
 		quantity12 = ref(),
 		quantity13 = ref(),
 		quantity14 = ref(),
+		quantity15 = ref(),
 		price1 = ref(),
 		price2 = ref(),
 		price3 = ref(),
@@ -28,7 +29,8 @@
 		price11 = ref(),
 		price12 = ref(),
 		price13 = ref(),
-		price14 = ref();
+		price14 = ref(),
+		price15 = ref();
 
 	function totalPrice(quantity, price) {
 		return parseFloat(quantity) * parseFloat(price);
@@ -48,7 +50,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return parseInt(quantity1.value);
 		}
@@ -66,7 +69,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return parseInt(quantity1.value) + parseInt(quantity2.value);
 		}
@@ -84,7 +88,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) + parseInt(quantity2.value) + parseInt(quantity3.value)
@@ -104,7 +109,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) +
@@ -127,7 +133,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) +
@@ -151,7 +158,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) +
@@ -176,7 +184,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) +
@@ -202,7 +211,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) +
@@ -229,7 +239,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) +
@@ -257,7 +268,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) +
@@ -286,7 +298,8 @@
 			quantity11.value !== undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) +
@@ -316,7 +329,8 @@
 			quantity11.value !== undefined &&
 			quantity12.value !== undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) +
@@ -347,7 +361,8 @@
 			quantity11.value !== undefined &&
 			quantity12.value !== undefined &&
 			quantity13.value !== undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) +
@@ -379,7 +394,8 @@
 			quantity11.value !== undefined &&
 			quantity12.value !== undefined &&
 			quantity13.value !== undefined &&
-			quantity14.value !== undefined
+			quantity14.value !== undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) +
@@ -396,6 +412,41 @@
 				parseInt(quantity12.value) +
 				parseInt(quantity13.value) +
 				parseInt(quantity14.value)
+			);
+		}
+		if (
+			quantity1.value !== undefined &&
+			quantity2.value !== undefined &&
+			quantity3.value !== undefined &&
+			quantity4.value !== undefined &&
+			quantity5.value !== undefined &&
+			quantity6.value !== undefined &&
+			quantity7.value !== undefined &&
+			quantity8.value !== undefined &&
+			quantity9.value !== undefined &&
+			quantity10.value !== undefined &&
+			quantity11.value !== undefined &&
+			quantity12.value !== undefined &&
+			quantity13.value !== undefined &&
+			quantity14.value !== undefined &&
+			quantity15.value !== undefined
+		) {
+			return (
+				parseInt(quantity1.value) +
+				parseInt(quantity2.value) +
+				parseInt(quantity3.value) +
+				parseInt(quantity4.value) +
+				parseInt(quantity5.value) +
+				parseInt(quantity6.value) +
+				parseInt(quantity7.value) +
+				parseInt(quantity8.value) +
+				parseInt(quantity9.value) +
+				parseInt(quantity10.value) +
+				parseInt(quantity11.value) +
+				parseInt(quantity12.value) +
+				parseInt(quantity13.value) +
+				parseInt(quantity14.value) +
+				parseInt(quantity15.value)
 			);
 		}
 	}
@@ -415,7 +466,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (parseInt(quantity1.value) * parseFloat(price1.value)).toFixed(2);
 		}
@@ -435,7 +487,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -459,7 +512,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -485,7 +539,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -513,7 +568,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -543,7 +599,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -575,7 +632,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -609,7 +667,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -645,7 +704,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -683,7 +743,8 @@
 			quantity11.value === undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -723,7 +784,8 @@
 			price11.value !== undefined &&
 			quantity12.value === undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -765,7 +827,8 @@
 			quantity12.value !== undefined &&
 			price12.value !== undefined &&
 			quantity13.value === undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -809,7 +872,8 @@
 			price12.value !== undefined &&
 			quantity13.value !== undefined &&
 			price13.value !== undefined &&
-			quantity14.value === undefined
+			quantity14.value === undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -855,7 +919,8 @@
 			quantity13.value !== undefined &&
 			price13.value !== undefined &&
 			quantity14.value !== undefined &&
-			price14.value !== undefined
+			price14.value !== undefined &&
+			quantity15.value === undefined
 		) {
 			return (
 				parseInt(quantity1.value) * parseFloat(price1.value) +
@@ -872,6 +937,56 @@
 				parseInt(quantity12.value) * parseFloat(price12.value) +
 				parseInt(quantity13.value) * parseFloat(price13.value) +
 				parseInt(quantity14.value) * parseFloat(price14.value)
+			).toFixed(2);
+		}
+		if (
+			quantity1.value !== undefined &&
+			price1.value !== undefined &&
+			quantity2.value !== undefined &&
+			price2.value !== undefined &&
+			quantity3.value !== undefined &&
+			price3.value !== undefined &&
+			quantity4.value !== undefined &&
+			price4.value !== undefined &&
+			quantity5.value !== undefined &&
+			price5.value !== undefined &&
+			quantity6.value !== undefined &&
+			price6.value !== undefined &&
+			quantity7.value !== undefined &&
+			price7.value !== undefined &&
+			quantity8.value !== undefined &&
+			price8.value !== undefined &&
+			quantity9.value !== undefined &&
+			price9.value !== undefined &&
+			quantity10.value !== undefined &&
+			price10.value !== undefined &&
+			quantity11.value !== undefined &&
+			price11.value !== undefined &&
+			quantity12.value !== undefined &&
+			price12.value !== undefined &&
+			quantity13.value !== undefined &&
+			price13.value !== undefined &&
+			quantity14.value !== undefined &&
+			price14.value !== undefined &&
+			quantity15.value !== undefined &&
+			price15.value !== undefined
+		) {
+			return (
+				parseInt(quantity1.value) * parseFloat(price1.value) +
+				parseInt(quantity2.value) * parseFloat(price2.value) +
+				parseInt(quantity3.value) * parseFloat(price3.value) +
+				parseInt(quantity4.value) * parseFloat(price4.value) +
+				parseInt(quantity5.value) * parseFloat(price5.value) +
+				parseInt(quantity6.value) * parseFloat(price6.value) +
+				parseInt(quantity7.value) * parseFloat(price7.value) +
+				parseInt(quantity8.value) * parseFloat(price8.value) +
+				parseInt(quantity9.value) * parseFloat(price9.value) +
+				parseInt(quantity10.value) * parseFloat(price10.value) +
+				parseInt(quantity11.value) * parseFloat(price11.value) +
+				parseInt(quantity12.value) * parseFloat(price12.value) +
+				parseInt(quantity13.value) * parseFloat(price13.value) +
+				parseInt(quantity14.value) * parseFloat(price14.value) +
+				parseInt(quantity15.value) * parseFloat(price15.value)
 			).toFixed(2);
 		}
 	}
@@ -1306,6 +1421,35 @@
 						></p>
 						<p v-else class="text-right pr-5 pb-3">
 							{{ totalPrice(quantity14, price14).toFixed(2) }}
+						</p>
+					</td>
+				</tr>
+				<tr class="w-full">
+					<td class="w-[15%] border-b-[1px] border-l-[1px]">
+						<input
+							type="number"
+							v-model="quantity15"
+							class="w-full px-2 pb-1 text-center leading-6"
+						/>
+					</td>
+					<td class="w-[55%] border-b-[1px] border-l-[1px]">
+						<input type="text" class="w-full px-3 pb-1 leading-6" />
+					</td>
+					<td class="w-[15%] border-b-[1px] border-l-[1px]">
+						<input
+							type="number"
+							step="any"
+							v-model="price15"
+							class="w-full px-3 pb-1 text-right leading-6"
+						/>
+					</td>
+					<td class="w-[15%] border-l-[1px] border-b-[1px] border-r-[1px]">
+						<p
+							v-if="quantity15 === undefined || price15 === undefined"
+							class="text-right pr-5 pb-3"
+						></p>
+						<p v-else class="text-right pr-5 pb-3">
+							{{ totalPrice(quantity15, price15).toFixed(2) }}
 						</p>
 					</td>
 				</tr>
