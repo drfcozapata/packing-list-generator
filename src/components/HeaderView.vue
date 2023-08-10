@@ -6,11 +6,10 @@
 	const currentDate = computed(() => {
 		return new Date().toISOString().split('T')[0];
 	});
-	console.log(currentDate.value);
 </script>
 
 <template>
-	<header class="container flex items-center justify-between mb-5">
+	<header class="container flex items-center justify-between mt-2 mb-5">
 		<img src="/logoMC.png" />
 		<div class="m-auto">
 			<h1 class="text-center font-semibold">PACKING LIST</h1>

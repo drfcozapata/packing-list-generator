@@ -11,9 +11,27 @@
 	});
 	const activeTabName = ref('page1');
 	const currentTab = ref('page1');
+	const isToPdf = ref(false);
 	const id = ref('');
 	let nameField = ref('');
 	let cedulaField = ref('');
+
+	const props = defineProps({
+		pdfOptions: {
+			margin: 25,
+			image: {
+				type: 'jpeg',
+				quality: 2,
+			},
+			html2canvas: { scale: 3 },
+			jsPDF: {
+				unit: 'mm',
+				format: 'a4',
+				orientation: 'p',
+			},
+		},
+		exportFilename: 'PackingList.pdf',
+	});
 
 	const packingListNumber = computed(() => {
 		return Math.floor(Math.random() * 1000000);
@@ -35,26 +53,14 @@
 		currentTab.value = tabs[pageName];
 	};
 
-	const props = defineProps({
-		pdfOptions: {
-			margin: 25,
-			image: {
-				type: 'jpeg',
-				quality: 2,
-			},
-			html2canvas: { scale: 3 },
-			jsPDF: {
-				unit: 'mm',
-				format: 'a4',
-				orientation: 'p',
-			},
-		},
-		exportFilename: 'PackingList.pdf',
-	});
-
 	const pdf = ref(true);
 	const openInNewTab = () => {
+		isToPdf.value = true;
 		pdf.value.openInNewTab();
+
+		setTimeout(() => {
+			isToPdf.value = false;
+		}, 2000);
 	};
 
 	function resetForm() {
@@ -67,7 +73,7 @@
 	<ul class="flex justify-start">
 		<li
 			v-for="page in pagesQty"
-			class="flex h-8 w-28 text-black font-normal border rounded-t-xl justify-center items-center hover:bg-slate-200 cursor-pointer"
+			class="flex h-8 text-black font-normal border rounded-t-xl justify-center items-center hover:bg-slate-200 cursor-pointer named-tab"
 			:class="{ 'tab-active': activeTabName === `page${page}` }"
 			:id="`tab${page}`"
 			@click.prevent="handleTabClick(`page${page}`)"
@@ -83,10 +89,15 @@
 	</ul>
 
 	<!-- MAIN -->
-	<main class="px-4 py-3 border rounded-b-xl">
+	<main class="sm:px-0 md:px-4 py-3 border rounded-b-xl">
 		<v-pdf ref="pdf" :options="pdfOptions" :filename="exportFilename">
 			<div v-for="page in pagesQty" :id="`page${page}`">
-				<div :class="{ hidden: currentTab !== `page${page}` }">
+				<div
+					:class="{
+						hidden: isToPdf === false && currentTab !== `page${page}`,
+						block: isToPdf === true && currentTab !== `page${page}`,
+					}"
+				>
 					<HeaderView :packingListNumber="packingListNumber" />
 					<TableView />
 					<FooterView
@@ -139,6 +150,9 @@
 </template>
 
 <style>
+	.named-tab {
+		width: 112px;
+	}
 	.tab-active {
 		background-color: rgb(2 132 199) !important;
 		color: white;
@@ -168,6 +182,9 @@
 		font-size: 18px;
 	}
 	@media (max-width: 580px) {
+		.named-tab {
+			width: 80px;
+		}
 		.nameField {
 			width: 200px;
 		}
