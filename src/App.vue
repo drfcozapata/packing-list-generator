@@ -73,7 +73,7 @@
 	<ul class="flex justify-start">
 		<li
 			v-for="page in pagesQty"
-			class="flex h-8 text-black font-normal border rounded-t-xl justify-center items-center hover:bg-slate-200 cursor-pointer named-tab"
+			class="flex h-8 text-black font-normal border border-slate-600 border-b-0 rounded-t-xl justify-center items-center bg-white hover:bg-slate-200 cursor-pointer named-tab"
 			:class="{ 'tab-active': activeTabName === `page${page}` }"
 			:id="`tab${page}`"
 			@click.prevent="handleTabClick(`page${page}`)"
@@ -81,7 +81,7 @@
 			Hoja {{ page }}
 		</li>
 		<li
-			class="flex justify-center items-center h-8 w-12 border rounded-t-xl text-xl font-bold hover:cursor-pointer hover:bg-slate-200"
+			class="flex justify-center items-center h-8 w-12 border border-slate-600 border-b-0 rounded-t-xl text-xl font-bold hover:cursor-pointer bg-white hover:bg-slate-200"
 			@click="AddNewPage()"
 		>
 			+
@@ -89,7 +89,9 @@
 	</ul>
 
 	<!-- MAIN -->
-	<main class="sm:px-0 md:px-4 py-3 border rounded-b-xl">
+	<main
+		class="bg-white sm:px-0 md:px-4 py-3 border border-slate-600 rounded-b-xl rounded-r-xl"
+	>
 		<v-pdf ref="pdf" :options="pdfOptions" :filename="exportFilename">
 			<div v-for="page in pagesQty" :id="`page${page}`">
 				<div
@@ -120,13 +122,13 @@
 		</p>
 		<input
 			type="text"
-			class="h-9 text-center border rounded-xl nameField mr-4"
+			class="h-9 text-center border border-slate-600 rounded-xl nameField mr-4"
 			placeholder="Nombres y Apellidos (completos)"
-			v-model="nameField"
+			v-model.trim="nameField"
 		/>
 		<input
 			type="number"
-			class="h-9 text-center border rounded-xl cedulaField"
+			class="h-9 text-center border border-slate-600 rounded-xl cedulaField"
 			placeholder="Cédula de Id"
 			v-model="cedulaField"
 		/>
@@ -135,13 +137,13 @@
 	<!-- BUTTONS -->
 	<div class="buttons">
 		<button
-			class="bg-red-500 text-white font-semibold rounded btn-reset hover:bg-red-600"
+			class="bg-red-500 text-white font-semibold rounded-lg btn-reset hover:bg-red-600"
 			@click="resetForm()"
 		>
 			Limpiar Formulario
 		</button>
 		<button
-			class="bg-sky-600 text-white font-semibold rounded btn-pdf hover:bg-sky-700"
+			class="bg-sky-600 text-white font-semibold rounded-lg btn-pdf hover:bg-sky-700"
 			@click="openInNewTab()"
 		>
 			Guardar PDF

@@ -12,6 +12,8 @@
 body {
 	font-family: ubuntu, sans-serif;
 	font-size: 13px;
+	background: url('fondo-packing.jpg') no-repeat center center fixed;
+	background-size: cover;
 }
 @media (max-width: 580px) {
 	#app {
