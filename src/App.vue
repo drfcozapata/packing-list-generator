@@ -89,9 +89,7 @@
 	</ul>
 
 	<!-- MAIN -->
-	<main
-		class="bg-white sm:px-0 md:px-4 py-3 border border-slate-600 rounded-b-xl rounded-r-xl"
-	>
+	<main class="bg-white px-4 py-3 border border-slate-600 rounded-b-xl rounded-r-xl">
 		<v-pdf ref="pdf" :options="pdfOptions" :filename="exportFilename">
 			<div v-for="page in pagesQty" :id="`page${page}`">
 				<div
@@ -116,7 +114,7 @@
 
 	<!-- INPUTS -->
 	<div class="mt-5">
-		<p class="ml-1 mb-1">
+		<p class="ml-1 mb-1 text-inputs">
 			Por favor, introduzca en los campos siguientes su <i>Nombre Completo</i> y número de
 			<i>Cédula de Identidad</i>:
 		</p>
@@ -163,6 +161,9 @@
 	.tab-active:hover {
 		background-color: rgb(3 105 161) !important;
 	}
+	.text-inputs {
+		font-weight: 500;
+	}
 	.nameField {
 		width: 270px;
 	}
@@ -184,8 +185,15 @@
 		font-size: 18px;
 	}
 	@media (max-width: 580px) {
+		main {
+			padding: 0 6px;
+		}
 		.named-tab {
 			width: 80px;
+		}
+		.text-inputs {
+			color: white;
+			font-weight: 600;
 		}
 		.nameField {
 			width: 200px;

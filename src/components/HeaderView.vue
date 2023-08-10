@@ -15,7 +15,7 @@
 			<h1 class="text-center font-semibold">PACKING LIST</h1>
 			<p class="text-center">Packing List Nº: 000{{ packingListNumber }}</p>
 		</div>
-		<div class="flex flex-col">
+		<div class="flex flex-col -mr-4">
 			<p class="mb-1">Fecha:</p>
 			<input type="date" v-model="currentDate" class="w-32 h-8" />
 		</div>
@@ -32,6 +32,11 @@
 		line-height: 32px;
 	}
 	@media (max-width: 580px) {
+		input[type='date']::-webkit-calendar-picker-indicator {
+			-webkit-appearance: none;
+			display: none;
+			margin: 0;
+		}
 		img {
 			width: 80px;
 			height: 62px;
